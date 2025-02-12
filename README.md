@@ -101,5 +101,8 @@ $pendingUpdates | Format-Table -Property KBArticle, Title, Size, Installed
 - You can format the output to check the KB articles, update titles, and their installation status.
 
 ### Resource
-Update - https://www.starwindsoftware.com/blog/wsus-import-updates-new-powershell-import-method/
+Auto Update - https://www.starwindsoftware.com/blog/wsus-import-updates-new-powershell-import-method/
+
 Troubleshooting - https://4sysops.com/archives/import-updates-manually-into-wsus-with-ie-or-powershell/
+
+Manual - https://rdr-it.com/en/wsus-manually-import-an-update-from-the-microsoft-update-catalog
