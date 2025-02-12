@@ -23,6 +23,7 @@ how to wsus
 # Use with localhost default port, file with updateID's
 .\ImportUpdateToWSUS.ps1 -UpdateIdFilePath .\file.txt
 ```
+Save as ImportUpdateToWSUS.ps1
 ```bash
 <#
 .SYNOPSIS
