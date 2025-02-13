@@ -19,6 +19,10 @@ Explanation:
 %date:~10,4%: Extracts the year from the date string (starting from position 10, taking 4 characters).
 This approach will use the date in MM-DD-YYYY format for both the export and date.log filenames, for example: export02-13-2025.xml.gz and date02-13-2025.log.
 ```
+### How to show wsus
+```bash
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v WUServer
+```
 ### How to use Powershell script
 ```bash
 .EXAMPLE
