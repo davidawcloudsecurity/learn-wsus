@@ -1,6 +1,10 @@
 # learn-wsus
 how to wsus
-### how to tar in windows
+### how to unzip tar in Windows
+```bash
+tar -xvzf C:\Temp\WsusContent_02-13-2025.tar.gz -C C:\Temp\ExtractedWsusContent
+```
+### how to zip tar in windows
 ```bash
 tar -czf C:\temp\WsusContent_%date:~4,2%-%date:~7,2%-%date:~10,4%.tar.gz -C C:\WSUS_database WsusContent
 ```
