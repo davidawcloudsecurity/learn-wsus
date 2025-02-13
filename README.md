@@ -4,8 +4,6 @@ how to wsus
 ### how to run wsus dynamic 
 ```bash
 C:\"Program Files\Update Services"\Tools\WsusUtil.exe export "C:\temp\export_%date:~4,2%-%date:~7,2%-%date:~10,4%.xml.gz" "C:\temp\export_%date:~4,2%-%date:~7,2%-%date:~10,4%.log"
-Updates are being exported. Please do not stop this program.
-All updates are successfully exported.
 ```
 ```bash
 Explanation:
