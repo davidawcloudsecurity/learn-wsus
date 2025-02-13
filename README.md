@@ -1,6 +1,9 @@
 # learn-wsus
 how to wsus
-
+### how to tar in windows
+```bash
+tar -czf C:\temp\WsusContent_%date:~4,2%-%date:~7,2%-%date:~10,4%.tar.gz -C C:\WSUS_database WsusContent
+```
 ### how to run wsus dynamic 
 ```bash
 C:\"Program Files\Update Services"\Tools\WsusUtil.exe export "C:\temp\export_%date:~4,2%-%date:~7,2%-%date:~10,4%.xml.gz" "C:\temp\export_%date:~4,2%-%date:~7,2%-%date:~10,4%.log"
