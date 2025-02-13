@@ -1,6 +1,19 @@
 # learn-wsus
 how to wsus
 
+### how to run wsus dynamic 
+```bash
+C:\"Program Files\Update Services"\Tools\WsusUtil.exe export "C:\temp\export_%date:~4,2%-%date:~7,2%-%date:~10,4%.xml.gz" "C:\temp\export_%date:~4,2%-%date:~7,2%-%date:~10,4%.log"
+Updates are being exported. Please do not stop this program.
+All updates are successfully exported.
+```
+```bash
+Explanation:
+%date:~4,2%: Extracts the month from the date string (starting from position 4, taking 2 characters).
+%date:~7,2%: Extracts the day from the date string (starting from position 7, taking 2 characters).
+%date:~10,4%: Extracts the year from the date string (starting from position 10, taking 4 characters).
+This approach will use the date in MM-DD-YYYY format for both the export and date.log filenames, for example: export02-13-2025.xml.gz and date02-13-2025.log.
+```
 ### How to use Powershell script
 ```bash
 .EXAMPLE
