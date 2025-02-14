@@ -1,5 +1,12 @@
 # learn-wsus
 how to wsus
+### how to install cab
+```bash
+dism /online /add-package /packagepath:"C:\path\to\your\file.cab"
+```
+```bash
+Add-WindowsPackage -Online -PackagePath "C:\path\to\your\file.cab"
+```
 ### how to unzip tar in Windows
 ```bash
 tar -xvzf C:\Temp\WsusContent_02-13-2025.tar.gz -C C:\Temp\ExtractedWsusContent
