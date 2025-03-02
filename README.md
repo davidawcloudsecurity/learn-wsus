@@ -2,6 +2,10 @@
 how to wsus
 ### how to install cab
 ```bash
+expand -f:* “C:\Temp\windows10.0-kb4056887-x64.msu” C:\Temp\kb4056887
+DISM.exe /Online /Add-Package /PackagePath:c:\Temp\kb4056887\Windows10.0-KB4056887-x64.cab
+```
+```bash
 dism /online /add-package /packagepath:"C:\path\to\your\file.cab"
 ```
 ```bash
@@ -286,8 +290,12 @@ $pendingUpdates | Format-Table -Property KBArticle, Title, Size, Installed
 - You can format the output to check the KB articles, update titles, and their installation status.
 
 ### Resource
+https://support.microsoft.com/en-us/topic/windows-server-2022-update-history-e1caa597-00c5-4ab9-9f3e-8212fe80b2ee
+
 Auto Update - https://www.starwindsoftware.com/blog/wsus-import-updates-new-powershell-import-method/
 
 Troubleshooting - https://4sysops.com/archives/import-updates-manually-into-wsus-with-ie-or-powershell/
 
 Manual - https://rdr-it.com/en/wsus-manually-import-an-update-from-the-microsoft-update-catalog
+
+https://woshub.com/manually-install-cab-msu-updates-windows/
